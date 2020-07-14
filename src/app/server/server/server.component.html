@@ -1,0 +1,24 @@
+<div class="container align-content-md-center center">
+<label>Write your input here</label>
+<input 
+type="text" 
+class="form-control"
+(input)="onInput($event)"
+>
+<button 
+(click)="onClickDisplay()"
+class="btn btn-dark mt-3"
+>Add your input into the DOM!</button>
+<button 
+(click)="onClickDelete()"
+class="btn btn-danger mt-3 ml-2"
+>Delete The text</button>
+<p class="display-4 text-center mt-4">{{addText}} </p>
+
+<input type="text" class="form-control" [(ngModel)]="username">
+<p display-4 text-center mt-4>{{username}}</p>
+<button
+(click)="username = ''"
+class="btn btn-primary" [disabled]="username === ''">Reset User</button>
+<p appTurnGreen>Rrrr</p>
+</div>
